@@ -1,0 +1,35 @@
+<html>
+<head>
+    <title>Arms</title>
+</head>
+<body>
+    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+        <input type="number" name="!"></input>
+        <input type="submit"></input>
+    </form>
+
+    <?php
+        $p=$_POST["!"],$n,$sum=0,$count=0,$rem;
+        $sw='Armstrong no.';
+        $nsw='No';
+        $n=$p;
+        while($p)
+        {
+            $rem=$p%10;
+            $count++;
+            $p=Math.floor($p/10);
+        }
+        $p=$n;
+        while($p)
+        {
+            $rem=$p%10;
+            $sum+=Math.pow($rem,$count);
+            $p=Math.floor($p/10);
+        }
+        if($sum===$n)
+            echo $sw;
+        else
+            echo nsw;
+    ?>
+</body>
+</html>
