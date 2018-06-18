@@ -1,0 +1,131 @@
+<html>
+<head>
+<title>ICE CAKES</title>
+<style>
+div{
+  background: url(trash/i1.jpg) repeat;
+   border:2px solid black;
+}
+h1{
+  border:.8px solid black;
+background-color:#ffffff;
+opacity:0.6;
+text-align:center;
+color:#ff45a2
+}
+ul{
+list-styte-type:none;
+}
+li{
+display:inline;
+}
+li img
+{
+text-align:center;
+padding: 14px 150px;
+}
+img:hover 
+{
+  opacity:.8;
+}
+body{
+ background-color:#aaaa11 opacity:.2;
+}
+table
+{
+table-collapse: collapse;
+border: 1px solid rgba(255, 99, 71,.8);
+background-color: rgba(255, 99, 71, 0.2);
+width: 60%;
+font-size: 18px;
+margin-left: auto;
+margin-right: auto;
+}
+th
+{
+border: 1px solid rgba(255, 99, 71,0);
+height: 100px;
+}
+td
+{
+border: 1px solid rgba(255, 99, 71,0);
+text-align: left;
+}
+
+form
+{
+method: post;
+action: <?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>
+}
+
+</style>
+<body>
+<div>
+<h1><bold>SEA ICE CAKES</body></h1>
+</div>
+<ul>
+<li><img src="trash/i2.jpg"></li>
+<li><img src="trash/i3.jpg"></li>
+</ul>
+<table>
+<tr>
+   <th></th>
+   <th>MENU</th>
+   <th></th>
+   <th>PRICE</th>
+   <th>QUANTITY</th>
+</tr>
+<tr>
+    <td><img src="trash/i8.jpg" width=70pts height=70pts></td>
+    <td>TutFruit<td>
+    <td>100.00</td>
+    <td><form><input type="number"  name="1" min="1" max="100"></form></td> 
+ </tr>   
+
+<tr>
+    <td><img src="trash/i9.jpg" width=70pts height=70pts></td>
+    <td>Stawmel<td>
+    <td>100.00</td>
+    <td><form><input type="type" size="2" name="2"></form></td> 
+ </tr>
+   
+<tr>
+    <td><img src="trash/i10.jpg" width=70pts height=70pts></td>
+    <td>Bonanze<td>
+    <td>180.00</td>
+    <td><form><input type="number" size="2" name="3"></form></td> 
+ </tr>
+
+<tr>
+    <td><img src="trash/i11.jpg" width=70pts height=70pts></td>
+    <td>Heavenzy<td>
+    <td>300.00</td>
+    <td><form><input type="number" size="2" name="4"></form></td> 
+ </tr>   
+
+<tr>
+    <td><img src="trash/i12.jpg" width=70pts height=70pts></td>
+    <td>Shake cake<td>
+    <td>200.00</td>
+    <td><form><input type="number"  size="2" name="5"></form></td> 
+ </tr>
+
+<tr>
+    <td colspan="5"><center><input type="image" src="trash/thumbsup1.jpg" height=60px width=90px alt="Submit" ></center></td>      
+</tr>
+
+<a href="https://www.youtube.com/watch?v=4SwmNTjJeH0">
+<img width="90pts" height="90pts" src="trash/Utube.jpg" align=bottom; >
+</a>
+
+<?php
+
+$sum=$_POST["1"]+$_POST["2"]+$_POST["3"]+$_POST["4"]+$_POST["5"];
+<div background-color="seagreen" border-color="#ggaadd" border-width="4px" border-style="dotted">
+echo $sum;
+</div>
+
+?>
+
+</body>
+</html>
